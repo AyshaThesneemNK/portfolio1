@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 100vh 50vh;
+    background-color: #6200EE;}
+
+    .section {
+        grid-row: 2;
+        background-color: #FFF;}
+
+        .tunnel {
+            animation-delay: inherit;
+            background-color:black;
+            background-position: center;
+            background-size: 1500px;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width:100%;
+            position: sticky;
+            top: 30vh;}
+            
+
+            .animate {
+                animation: colorAnimation 1.1s linear infinite;
+                animation-play-state: paused;
+                animation-delay: inherit;
+                width: 500px;
+            }
+        
+
+@keyframes colorAnimation {
+    from {
+        transform: scale(3) translateY(15px);
+    }
+    to {
+        transform: scale(0.25) translateY(-25px);
+    }
+}
